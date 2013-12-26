@@ -1,0 +1,21 @@
+root { 
+    display: block;
+}
+body.ui-mobile-viewport, div.ui-mobile-viewport {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.footer-div
+{
+    float: left;
+    position: relative;
+    width: 24%;
+    text-align: center;
+    line-height: 2.6em;
+    border-right: 1px solid grey;
+    cursor: pointer; 
+}
+.last
+{
+    border-right: 0px;
+}
