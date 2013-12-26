@@ -15,7 +15,20 @@ body.ui-mobile-viewport, div.ui-mobile-viewport {
     border-right: 1px solid grey;
     cursor: pointer; 
 }
+
 .last
 {
     border-right: 0px;
+}
+
+.option
+{
+/*     background: green;*/
+     height: 13px;
+     width: 250px;
+     position: absolute;
+}
+.container
+{
+    position: relative;
 }
