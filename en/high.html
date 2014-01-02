@@ -1,7 +1,8 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>Learning application</title> 
+        <title>Learning application</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
         <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
@@ -15,11 +16,14 @@
     <link rel="stylesheet" href="../scripts/style.css" />
     <img class="bg-img" src="high/LAUSD_High_1.jpg" />
     <audio class="my_audio" src="high/LAUSD_High_1.mp3" type="audio/mpeg"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#high_en_1">|<</div>
-        <div class="footer-div" ><</div>
-        <div class="footer-div" href="#high_en_2">></div>
-        <div class="footer-div last">?</div>
+    <div data-role="footer">
+        <div class="ui-grid-d">
+            <div class="ui-block-a"><a href="#high_en_1" data-role="button" class="footer-button">|<</a></div>
+            <div class="ui-block-b"><a href="#high_en_1" data-role="button" class="footer-button"><</a></div>
+            <div class="ui-block-c"><a class="play_button footer-button" data-role="button">Play</a></div>
+            <div class="ui-block-d"><a href="#high_en_2" data-role="button" class="footer-button">></a></div>
+            <div class="ui-block-e"><a href="" data-role="button" class="footer-button">?</a></div>
+        </div>
     </div>
 </div>
 

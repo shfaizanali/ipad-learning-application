@@ -2,6 +2,7 @@
 <html> 
     <head> 
         <title>Learning application</title> 
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
         <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
@@ -21,10 +22,18 @@
     <ul data-role="listview" data-inset="true" data-divider-theme="a">
         <li data-role="list-divider">Select Level</li>
        
-            <li><a href="en/elementary.html">Elementary</a></li>
-            <li><a href="en/middle.html">Middle</a></li>
-            <li><a href="en/high.html">High</a></li>
+        <li><a href="en/elementary.html" data-ajax="false">Elementary</a></li>
+        <li><a href="en/middle.html" data-ajax="false">Middle</a></li>
+        <li><a href="en/high.html" data-ajax="false">High</a></li>
+        
     </ul>
+    <form>
+    <label for="flip-select">Narration:</label>
+    <select id="narration-select" class="narration-select" name="flip-select" data-role="flipswitch">
+        <option value="0">Off</option>
+        <option value="1" selected="">On</option>
+    </select>
+</form>
 </div>
 </div>
 </body>
