@@ -75,6 +75,7 @@ function setImageWidthHeight()
     $('.bg-img').height(height);
     $('.bg-img').width(width);
     $('.footer').css('margin-top',height-$('.footer').height());
+    alert("hello");
 }
 
 function navigateBack(event)
