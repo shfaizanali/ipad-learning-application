@@ -3,9 +3,12 @@
     <head> 
         <title>Learning application</title> 
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<!--        <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
         <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>-->
+        <script type="text/javascript" src="../scripts/jquery.js"></script>
+        <script src="../scripts/jquery.mobile-1.4.0.min.js"></script>
+        <link rel="stylesheet" href="../scripts/jquery.mobile-1.4.0.min.css" />
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,height=device-height" />
     </head> 
 <body> 
@@ -14,252 +17,381 @@
 <div data-role="page" id="elementary_en_1">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_1.jpg" />
-    
     <audio class="my_audio" src="elementary/LAUSD_Elem_1.mp3" type="audio/mpeg"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" ><</div>
-        <div class="footer-div" href="#elementary_en_2">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer" style="">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_1" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_2" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <img class="bg-img" src="elementary/LAUSD_Elem_1.jpg" />
     </div>
 </div>
 
 <div data-role="page" id="elementary_en_2">
     <script src="../scripts/scripts.js"></script>	
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_2.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_2.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_1"><</div>
-        <div class="footer-div" href="#elementary_en_3">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_1" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_3" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <img class="bg-img" src="elementary/LAUSD_Elem_2.jpg" />
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_2.mp3"></audio>
 </div>
 
 <div data-role="page" id="elementary_en_3">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_3.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_3.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_2"><</div>
-        <div class="footer-div" href="#elementary_en_4">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_2" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_4" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <img class="bg-img" src="elementary/LAUSD_Elem_3.jpg" />
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_3.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_4">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <div class="container">
-        <img class="bg-img" src="elementary/LAUSD_Elem_4.jpg" />
-        <div class="option"  style="left:21%;top:60%;" ></div>
-        <div class="option"  style="left:21%;top:62.5%;" ></div>
-        <div class="option"  style="left:21%;top:65%;" ></div>
-        <div class="option correct"  style="left:21%;top:67.5%;" ></div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_3" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_5" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_4.jpg" />
+            <div class="option"  style="left:21%;top:60%;" data-option="a"></div>
+            <div class="option"  style="left:21%;top:62.5%;" data-option="b"></div>
+            <div class="option"  style="left:21%;top:65%;" data-option="c"></div>
+            <div class="option correct"  style="left:21%;top:67.5%;" data-option="d"></div>
+        </div>
     </div>
+    
     <audio class="my_audio" src="elementary/LAUSD_Elem_4_q1.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_3"><</div>
-        <div class="footer-div quest-mandatory" href="#elementary_en_5"> ></div>
-        <div class="footer-div last">?</div>
-    </div>
 </div>
     
 <div data-role="page" id="elementary_en_5">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <div class="container">
-        <img class="bg-img" src="elementary/LAUSD_Elem_5.jpg" />
-        <div class="option"  style="left:21%;top:62%;" ></div>
-        <div class="option"  style="left:21%;top:64.5%;" ></div>
-        <div class="option"  style="left:21%;top:67%;" ></div>
-        <div class="option correct"  style="left:21%;top:69.5%;"></div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_4" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_6" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_5.jpg" />
+            <div class="option"  style="left:21%;top:62%;" data-option="a"></div>
+            <div class="option"  style="left:21%;top:64.5%;" data-option="b"></div>
+            <div class="option"  style="left:21%;top:67%;" data-option="c"></div>
+            <div class="option correct"  style="left:21%;top:69.5%;" data-option="d"></div>
+        </div>
     </div>
     <audio class="my_audio" src="elementary/LAUSD_Elem_5_q2.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_4"><</div>
-        <div class="footer-div quest-mandatory" href="#elementary_en_6">></div>
-        <div class="footer-div last">?</div>
-    </div>
 </div>
 
 <div data-role="page" id="elementary_en_6">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <div class="container">
-        <div class="option correct"  style="left:19%;top:67%;" ></div>
-        <div class="option"  style="left:19%;top:69.5%;" ></div>
-        <img class="bg-img" src="elementary/LAUSD_Elem_6.jpg" />
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_5" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_7" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="option correct"  style="left:19%;top:67%;" data-option="a"></div>
+            <div class="option"  style="left:19%;top:69.5%;" data-option="b"></div>
+            <img class="bg-img" src="elementary/LAUSD_Elem_6.jpg" />
+        </div>
     </div>
     <audio class="my_audio" src="elementary/LAUSD_Elem_6_q3.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_5"><</div>
-        <div class="footer-div quest-mandatory" href="#elementary_en_7">></div>
-        <div class="footer-div last">?</div>
-    </div>
 </div>
     
 <div data-role="page" id="elementary_en_7">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_7.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_7_q4.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_6"><</div>
-        <div class="footer-div" href="#elementary_en_8">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_6" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_8" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_7.jpg" />
+            <div class="option correct"  style="left:21%;top:66.5%;" data-option="a"></div>
+            <div class="option"  style="left:21%;top:69.5%;" data-option="b"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_7_q4.mp3"></audio>
 </div>
 
 <div data-role="page" id="elementary_en_8">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_8.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_8_q5.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_7"><</div>
-        <div class="footer-div" href="#elementary_en_9">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_7" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_9" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_8.jpg" />
+            <div class="option"  style="left:20%;top:67.5%;" data-option="a"></div>
+            <div class="option correct"  style="left:20%;top:69.7%;" data-option="b"></div>
+            <div class="option"  style="left:20%;top:71.8%;" data-option="c"></div>
+            <div class="option"  style="left:20%;top:74%;" data-option="d"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_8_q5.mp3"></audio>
 </div>
 
 <div data-role="page" id="elementary_en_9">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_9.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_9_q6.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_8"><</div>
-        <div class="footer-div" href="#elementary_en_10">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_8" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_10" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_9.jpg" />
+            <div class="option"  style="left:20%;top:67.5%;height: 25px;width: 64%;" data-option="a"></div>
+            <div class="option"  style="left:20%;top:71.7%;" data-option="b"></div>
+            <div class="option"  style="left:20%;top:74%;" data-option="c"></div>
+            <div class="option correct"  style="left:20%;top:76.5%;" data-option="d"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_9_q6.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_10">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_10.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_10_q7_m.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_9"><</div>
-        <div class="footer-div" href="#elementary_en_11">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_9" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_11" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_10.jpg" />
+            <div class="option correct"  style="left:22%;top:62.5%;width: 39%;" data-option="a"></div>
+            <div class="option"  style="left:22%;top:64.7%;" data-option="b"></div>
+            <div class="option"  style="left:22%;top:67%;width: 39%;" data-option="c"></div>
+            <div class="option"  style="left:22%;top:69.5%;width: 39%;" data-option="d"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_10_q7_m.mp3"></audio>
 </div>
 
 <div data-role="page" id="elementary_en_11">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_11.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_11_q8.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_10"><</div>
-        <div class="footer-div" href="#elementary_en_12">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_10" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_12" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_11.jpg" />
+            <div class="option correct"  style="left:16%;top:65.5%;width: 50%;" data-option="a"></div>
+            <div class="option"  style="left:16%;top:67.7%;width: 39%;" data-option="b"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_11_q8.mp3"></audio>
 </div>
 
 <div data-role="page" id="elementary_en_12">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_12.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_12_q9.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_11"><</div>
-        <div class="footer-div" href="#elementary_en_13">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_11" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_13" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_12.jpg" />
+            <div class="option"  style="left:18%;top:64.5%;" data-option="a"></div>
+            <div class="option correct"  style="left:18%;top:67.4%;" data-option="b"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_12_q9.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_13">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_13.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_13_q10.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_12"><</div>
-        <div class="footer-div" href="#elementary_en_14">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_12" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_14" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_13.jpg" />
+            <div class="option correct"  style="left:18%;top:64.5%;" data-option="a"></div>
+            <div class="option"  style="left:18%;top:67.4%;" data-option="b"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_13_q10.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_14">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_14.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_14_q11.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_13"><</div>
-        <div class="footer-div" href="#elementary_en_15">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_13" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_15" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_14.jpg" />
+            <div class="option"  style="left:19%;top:68.5%;" data-option="a"></div>
+            <div class="option"  style="left:19%;top:70.6%;" data-option="b"></div>
+            <div class="option"  style="left:19%;top:73%;" data-option="c"></div>
+            <div class="option correct"  style="left:19%;top:75.4%;" data-option="d"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_14_q11.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_15">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_15.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_15_q12.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_14"><</div>
-        <div class="footer-div" href="#elementary_en_16">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_14" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_16" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_15.jpg" />
+            <div class="option"  style="left:21%;top:63.5%;width: 42%;" data-option="a"></div>
+            <div class="option"  style="left:21%;top:65.6%;width: 42%;" data-option="b"></div>
+            <div class="option"  style="left:21%;top:68%;width: 42%;" data-option="c"></div>
+            <div class="option correct"  style="left:21%;top:70.4%;width: 42%;" data-option="d"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_15_q12.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_16">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_16.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_16_q13.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_15"><</div>
-        <div class="footer-div" href="#elementary_en_17">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_15" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_17" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_16.jpg" />
+            <div class="option"  style="left:21%;top:64.5%;" data-option="a"></div>
+            <div class="option correct"  style="left:21%;top:66.7%;" data-option="b"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_16_q13.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_17">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_17.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_17_q14.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_16"><</div>
-        <div class="footer-div" href="#elementary_en_18">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_16" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_18" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_17.jpg" />
+            <div class="option"  style="left:21%;top:67.5%;" data-option="a"></div>
+            <div class="option correct"  style="left:21%;top:69.7%;" data-option="b"></div>
+        </div>
     </div>
+    <audio class="my_audio" src="elementary/LAUSD_Elem_17_q14.mp3"></audio>
 </div>
     
 <div data-role="page" id="elementary_en_18">
     <script src="../scripts/scripts.js"></script>
     <link rel="stylesheet" href="../scripts/style.css" />
-    <img class="bg-img" src="elementary/LAUSD_Elem_18.jpg" />
-    <audio class="my_audio" src="elementary/LAUSD_Elem_18.mp3"></audio>
-    <div data-role="footer" style="height: 42px">
-        <div class="footer-div" href="#elementary_en_1">|<</div>
-        <div class="footer-div" href="#elementary_en_17"><</div>
-        <div class="footer-div" href="#elementary_en_18">></div>
-        <div class="footer-div last">?</div>
+    <div class="img-container">
+        <div class="footer">
+            <div class="ui-grid-c">
+                <div class="ui-block-a"><center><a href="#elementary_en_1" data-role="none" class="footer-button">|<</a></center></div>
+                <div class="ui-block-b"><center><a href="#elementary_en_17" data-role="none" class="footer-button"><</a></center></div>
+                <div class="ui-block-c"><center><a href="#elementary_en_18" data-role="none" class="footer-button">></a></center></div>
+                <div class="ui-block-d"><center><a href="#custom-url-here" data-role="none" class="footer-button">?</a></center></div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="bg-img" src="elementary/LAUSD_Elem_18.jpg" />
+        </div>
     </div>
+    
+    <audio class="my_audio" src="elementary/LAUSD_Elem_18.mp3"></audio>
 </div>
 </body>
 </html>
