@@ -28,6 +28,7 @@ body.ui-mobile-viewport, div.ui-mobile-viewport {
 .option
 {
 /*     background: green;*/
+     opacity:0.4;
      height: 13px;
      width: 250px;
      position: absolute;

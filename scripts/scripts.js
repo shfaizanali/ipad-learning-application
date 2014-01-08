@@ -3,6 +3,7 @@ $("div:jqmData(role='page')").on( "pagecreate", function( event )
     setImageWidthHeight();
     
     $('.option').off().on("click",checkAnswer);
+    $('.back-button').off().on("click",navigateBack);
     $('.narration-select').on('change',turnSoundOnOff);
     if($('.narration-select').length > 0)
     {
@@ -77,3 +78,7 @@ function setImageWidthHeight()
     $('.footer').css('margin-top',height-$('.footer').height());
 }
 
+function navigateBack(event)
+{
+    $.mobile.back();
+}
