@@ -21,7 +21,22 @@
         {
 //            $('.bg-img').height($(window).height());
             $('.bg-img').width($(window).width());
-        });
+            
+            
+ //id=$this.attr('id');
+$('.cover-page').off().on("click",tapHandler);
+ $('.cover-page').on('click',tapHandler);       
+
+  
+  
+  function tapHandler( event ){
+      
+  $.mobile.navigate('choose_language.html');    
+      
+  
+  }
+});
+        
     </script>
     <img src="img/app-cover.jpg" alt="" class="bg-img"/>
 </div><!-- /page -->

@@ -9,6 +9,10 @@ $("div:jqmData(role='page')").on( "pagecreate", function( event )
     {
         sessionStorage.narration = parseInt($('.narration-select').val());
     }
+    
+    
+    
+    
 });
 
 $("div:jqmData(role='page')").on( "pageshow", function( event )
@@ -81,4 +85,73 @@ function setImageWidthHeight()
 function navigateBack(event)
 {
     $.mobile.back();
+}
+
+
+
+$("div:jqmData(role='page')").on( "pageshow", function( event )
+{
+    
+    if($(this).find("img").length>0)
+    {
+        
+        id=$(this).attr('id');
+        $( "#"+id ).off().on( "swipeleft", swipeHandler );
+          $( "#"+id ).off().on( "swiperight", swipeHandler );
+        
+        $("#"+id).on( "swipeleft", swipeHandler );
+         $("#"+id).on( "swiperight", swipeHandler );
+        
+        
+    }
+    
+    });
+
+function playNextTrack(page)
+{
+    
+     if(sessionStorage.narration == "1")
+    {
+        if(page.children('.my_audio').length)
+        {
+            page.children('.my_audio').get(0).pause();
+            page.children('.my_audio').get(0).currentTime = 0 ;
+        }
+    }
+    
+}
+
+function playBackTrack(page)
+{
+    
+    if(sessionStorage.narration == "1")
+    {
+        if(page.children('.my_audio').length)
+        {
+            page.children('.my_audio').get(0).play();
+        }
+    }
+    
+}
+
+
+function swipeHandler( event ){
+    
+    var page = "#" + $(this).attr("id");
+   if (event.type == 'swipeleft') {
+        playNextTrack($(this));
+                 var nextpage = $(this).next('div[data-role="page"]');
+       $(page).find('.footer').find('.ui-block-c').find('a').off().trigger('click');
+        playBackTrack(nextpage);
+       
+    }
+    
+    if (event.type == 'swiperight') {
+        playNextTrack($(this));
+       var prevpage = $(this).prev('div[data-role="page"]');
+  $(page).find('.footer').find('.ui-block-b').find('a').off().trigger('click'); 
+      playBackTrack(prevpage);
+    }
+   
+ 
 }
